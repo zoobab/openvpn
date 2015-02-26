@@ -1,0 +1,10 @@
+debian/openvpn/usr/share/doc/openvpn/changelog.gz
+debian/openvpn/usr/share/doc/openvpn/README.Debian.gz
+debian/openvpn/usr/share/doc/openvpn/changelog.Debian.gz
+debian/openvpn/usr/share/doc/openvpn/NEWS.Debian.gz
+debian/openvpn/usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz
+debian/openvpn/usr/share/doc/openvpn/examples/sample-keys/client-ec.crt.gz
+debian/openvpn/usr/share/doc/openvpn/examples/sample-keys/client.p12.gz
+debian/openvpn/usr/share/doc/openvpn/examples/sample-keys/server.crt.gz
+debian/openvpn/usr/share/doc/openvpn/examples/sample-keys/server-ec.crt.gz
+debian/openvpn/usr/share/doc/openvpn/examples/sample-keys/client.crt.gz
