@@ -14,7 +14,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(shell dpkg-buildflags --export=configure) --enable-password-save --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) --prefix=/usr/sbin --mandir=\$${prefix}/share/man --with-ifconfig-path=/sbin/ifconfig $(ROUTE_ARGS) --with-plugindir=\$${prefix}/lib/openvpn --includedir=\$${prefix}/include/openvpn --enable-pkcs11 --enable-x509-alt-username 
+	dh_auto_configure -- $(shell dpkg-buildflags --export=configure) --enable-password-save --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) --prefix=/usr --mandir=\$${prefix}/share/man --with-ifconfig-path=/sbin/ifconfig $(ROUTE_ARGS) --with-plugindir=\$${prefix}/lib/openvpn --includedir=\$${prefix}/include/openvpn --enable-pkcs11 --enable-x509-alt-username 
 
 
 override_dh_auto_build:
@@ -45,7 +45,6 @@ override_dh_clean:
 
 override_dh_auto_install:
 	dh_auto_install
-	install -m 755 src/openvpn/openvpn $(CURDIR)/debian/openvpn/usr/sbin/openvpn
 	install -m 755 sample/sample-scripts/verify-cn $(CURDIR)/debian/openvpn/usr/share/openvpn
 	install -m 755 debian/openvpn.if-up.d $(CURDIR)/debian/openvpn/etc/network/if-up.d/openvpn
 	install -m 755 debian/openvpn.if-down.d $(CURDIR)/debian/openvpn/etc/network/if-down.d/openvpn
