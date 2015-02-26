@@ -1,14 +1,3 @@
-openvpn (2.3.6-1+0~20150225173401.1~1.gbp81df50) stable; urgency=low
-
-  ** SNAPSHOT build @81df50a87dc25145d0c13e70014752dc1750b87c **
-
-  [ zoobab ]
-  * control: depends on iproute, not iproute2
-
-  [ jenkins-debian-glue Autobuilder ]
-
- -- jenkins-debian-glue Autobuilder <jenkins@37bc2da8e7cd>  Wed, 25 Feb 2015 17:34:03 +0000
-
 openvpn (2.3.6-1) stable; urgency=low
 
   * Non-maintainer upload.
