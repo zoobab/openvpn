@@ -7,7 +7,7 @@ else
 ROUTE_ARGS	:= --with-route-path=/sbin/route --with-iproute-path=/sbin/ip 
 endif
 
-#export DH_VERBOSE=1
+export DH_VERBOSE=1
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
