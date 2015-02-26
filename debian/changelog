@@ -1,9 +1,8 @@
-openvpn (2.3.6-1) stable; urgency=low
+openvpn (2.3.6-1) stable; urgency=high
 
-  * Non-maintainer upload.
-  * Added remove_default_rcvbuf_sndbuf_values.patch
+  * take debian dir from 2.3.4
 
- -- Sebastien Chaumat <sebastien.chaumat@linefactory.net>  Wed, 21 Jan 2015 12:46:40 +0100
+ -- Benjamin Henrion <zoobab@gmail.com>  Mon, 08 Dec 2014 16:10:37 +0100
 
 openvpn (2.3.4-5) unstable; urgency=high
 
